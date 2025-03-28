@@ -47,7 +47,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-query = { "number": 975 }
+query = { "number": 975.07 }
 ```
 
 ###### Simple Request
@@ -67,8 +67,8 @@ print(result)
   "status": "ok",
   "error": null,
   "data": {
-    "number": "975",
-    "words": "nine hundred seventy-five",
+    "number": "975.07",
+    "words": "nine hundred seventy-five point zero seven",
     "ordinal": "nine hundred seventy-fifth",
     "numberOfDigits_numeric": 3,
     "numberOfDigits_words": "three",
@@ -76,7 +76,16 @@ print(result)
       "nine",
       "seven",
       "five"
-    ]
+    ],
+    "afterDecimal": {
+      "number": "07",
+      "words": [
+        "zero",
+        "seven"
+      ],
+      "numberOfDigits_numeric": 2,
+      "numberOfDigits_words": "two"
+    }
   },
   "code": 200
 }
@@ -104,7 +113,7 @@ All usage of the APIVerve website, API, and services is subject to the [APIVerve
 ## License
 Licensed under the The MIT License (MIT)
 
-Copyright (&copy;) 2024 APIVerve, and Evlar LLC
+Copyright (&copy;) 2025 APIVerve, and EvlarSoft LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
